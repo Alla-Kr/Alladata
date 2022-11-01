@@ -9,9 +9,10 @@ def random_predict(number: int = 1) -> int:
     Returns:
         int: с какой попытки угадали
     """ 
-        
+    np.random.seed(1)    
     number = np.random.randint(1, 101) # загадываем число
     count = 0 # количество попыток
+    
     print('Компьютер загадал число, Вам надо отгадать его за менее чем 20 попыток')
 
     for i in range(1, 21):
